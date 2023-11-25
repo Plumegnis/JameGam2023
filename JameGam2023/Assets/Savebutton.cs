@@ -1,11 +1,12 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Savebutton : MonoBehaviour
 {
     public GameObject cardObject; // Przypisz obiekt karty do tego pola w inspektorze Unity
     public bool hideButtonWithCard = false; // Decyduje, czy przycisk ma zniknąć razem z kartą
-    public bool hideAllButtons = true; // Decyduje, czy wszystkie przyciski mają zniknąć jednocześnie
+    public bool hideAllButtons = false; // Decyduje, czy wszystkie przyciski mają zniknąć jednocześnie
 
     private int savedCardsCount = 0;
 
@@ -55,6 +56,19 @@ public class Savebutton : MonoBehaviour
 
             // Wymuszenie zapisu danych do PlayerPrefs
             PlayerPrefs.Save();
+        }
+
+        // Znajdź wszystkie przyciski w scenie
+        Button[] allButtons = FindObjectsOfType<Button>();
+
+        // Sprawdź, czy wszystkie przyciski mają zniknąć
+        if (hideAllButtons)
+        {
+            // Zniknij wszystkie przyciski
+            foreach (Button button in allButtons)
+            {
+                button.gameObject.SetActive(false);
+            }
         }
     }
 }
