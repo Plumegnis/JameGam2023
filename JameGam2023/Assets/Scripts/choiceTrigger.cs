@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class choiceTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Collider2D Collider;
+    public GameObject Dialogue;
+    void OnCollisionEnter2D(Collision2D col)
     {
- 
+        if (col.gameObject.tag == "Player")
+        {
+            Dialogue.SetActive(true);
+        }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
-}

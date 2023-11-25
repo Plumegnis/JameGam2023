@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: -6776321250711116220}
   - component: {fileID: 7282290458502139018}
   - component: {fileID: 322200000}
-  - component: {fileID: -4074926414746846171}
   m_Layer: 3
   m_Name: Triangle
   m_TagString: Untagged
@@ -168,15 +167,3 @@ ConstantForce2D:
   m_Force: {x: 50, y: 0}
   m_RelativeForce: {x: 0, y: 0}
   m_Torque: 1
---- !u!114 &-4074926414746846171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4371166450605163721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dd3a48ee13649542bc5d31bcccc69ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -70,8 +70,6 @@ GameObject:
   - component: {fileID: 7232913175342993759}
   - component: {fileID: 7232913175342993756}
   - component: {fileID: 7232913175342993754}
-  - component: {fileID: 6863004961504785429}
-  - component: {fileID: 1329637050111609463}
   - component: {fileID: 6850037274595851555}
   - component: {fileID: -2307644460078011793}
   - component: {fileID: -6494384142910936312}
@@ -160,7 +158,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 10
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -197,68 +195,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
---- !u!114 &6863004961504785429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7232913175342993728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  Event: 
-  PlayEvent: 9
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: -1
-  OverrideMaxDistance: -1
---- !u!114 &1329637050111609463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7232913175342993728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  Event: 
-  PlayEvent: 15
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: -1
-  OverrideMaxDistance: -1
 --- !u!253 &6850037274595851555
 BuoyancyEffector2D:
   m_ObjectHideFlags: 0
@@ -304,7 +240,7 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   m_ShapePathHash: 0
   m_Mesh: {fileID: 0}
-  m_InstanceId: 54428
+  m_InstanceId: 112174
 --- !u!114 &-6494384142910936312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,3 +253,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cbba854932dc2e4eb062db0df23362f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Collider: {fileID: 0}
+  Dialogue: {fileID: 0}
