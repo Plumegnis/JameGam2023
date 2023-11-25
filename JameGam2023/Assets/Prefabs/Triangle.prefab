@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: -3695750610622827046}
   - component: {fileID: -6776321250711116220}
   - component: {fileID: 7282290458502139018}
-  - component: {fileID: 322200000}
   m_Layer: 3
   m_Name: Triangle
   m_TagString: Untagged
@@ -156,14 +155,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!247 &322200000
-ConstantForce2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4371166450605163721}
-  m_Enabled: 1
-  m_Force: {x: 50, y: 0}
-  m_RelativeForce: {x: 0, y: 0}
-  m_Torque: 1
