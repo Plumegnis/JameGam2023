@@ -160,7 +160,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 10
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -196,7 +196,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!114 &6863004961504785429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,7 +275,7 @@ BuoyancyEffector2D:
   m_Density: 2
   m_LinearDrag: 5
   m_AngularDrag: 5
-  m_FlowAngle: 0
+  m_FlowAngle: 90
   m_FlowMagnitude: 0
   m_FlowVariation: 0
 --- !u!114 &-2307644460078011793
@@ -304,7 +304,7 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   m_ShapePathHash: 0
   m_Mesh: {fileID: 0}
-  m_InstanceId: 44396
+  m_InstanceId: 54428
 --- !u!114 &-6494384142910936312
 MonoBehaviour:
   m_ObjectHideFlags: 0

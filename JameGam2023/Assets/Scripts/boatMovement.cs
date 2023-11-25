@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class boatMovement : MonoBehaviour
 {
+
     public GameObject lifeTalking;
 
     // Start is called before the first frame update

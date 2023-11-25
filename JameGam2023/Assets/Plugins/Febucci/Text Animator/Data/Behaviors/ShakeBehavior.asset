@@ -15,4 +15,4 @@ MonoBehaviour:
   tagID: shake
   baseAmplitude: 1.13
   baseDelay: 0.1
-  baseWaveSize: 0.45
+  baseWaveSize: 0.4

@@ -6,11 +6,13 @@ public class EventTriggering : MonoBehaviour
 {
     public int EventTriggerNumber = 0;
     public Collider2D Collider;
-    void OnTriggerEnter(Collider col)
+    public GameObject Dialogue;
+    void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "Player")
+        if (col.gameObject.tag == "movable")
         {
             EventTriggerNumber++;
+            col.gameObject.SetActive(false);
         }
 
 
@@ -18,10 +20,10 @@ public class EventTriggering : MonoBehaviour
         {
             case 0:
                 break;
-            case 1:
+            case 3:
                 Event1();
                 break;
-            case 2:
+            case 10:
                 Event2();
                 break;
         }
@@ -33,10 +35,6 @@ public class EventTriggering : MonoBehaviour
     }
 
     private void Event2()
-    {
-
-    }
-    public void StartFillup()
     {
 
     }
