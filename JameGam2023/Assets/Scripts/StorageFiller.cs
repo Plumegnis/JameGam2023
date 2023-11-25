@@ -14,8 +14,6 @@ public class StorageFiller : MonoBehaviour
 
     public GameObject BSOD;
 
-    public float randomeventchance;
-
     private bool isPaused = false;
 
     public int EventTriggerNumber = 0;
