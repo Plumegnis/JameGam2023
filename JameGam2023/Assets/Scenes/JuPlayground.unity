@@ -10213,6 +10213,18 @@ PrefabInstance:
       propertyPath: m_Range
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4917606949696641479, guid: 57a591830fb639649b8336419fae4668, type: 3}
+      propertyPath: m_SpotAngle
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917606949696641479, guid: 57a591830fb639649b8336419fae4668, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917606949696641479, guid: 57a591830fb639649b8336419fae4668, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57a591830fb639649b8336419fae4668, type: 3}
 --- !u!1001 &7232913176727767599
@@ -10222,6 +10234,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 233194507}
     m_Modifications:
+    - target: {fileID: -6494384142910936312, guid: 7f8d0dfd8d129ca419fc12317ab5d34a, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 9107583379711824708}
     - target: {fileID: -6494384142910936312, guid: 7f8d0dfd8d129ca419fc12317ab5d34a, type: 3}
       propertyPath: Collider
       value: 

@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class choiceTrigger : MonoBehaviour
 {
-    public Collider2D Collider;
+    public Collider2D player;
     public GameObject Dialogue;
-    void OnTriggernEnter2D(Collider col)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (col.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
             Dialogue.SetActive(true);
         }
     }
+
+
     }
