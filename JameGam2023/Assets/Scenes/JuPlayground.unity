@@ -8076,19 +8076,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 434366188}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 750670190}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &434366188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8109,11 +8097,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 1
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -41150,7 +41138,11 @@ MonoBehaviour:
   Jar: {fileID: 1938739045}
   Preserve: {fileID: 0}
   Leave: {fileID: 0}
-  jamAmount: 3
+  jamAmount: 1
+  counter: {fileID: 0}
+  myOwnEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &1938739047
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ public class JarFiller : MonoBehaviour, IPointerClickHandler
     public Button Preserve;
     public Button Leave;
 
-    public float jamAmount = 3;
+    public float jamAmount = 1;
 
     public Text counter;
 
@@ -32,7 +32,7 @@ public class JarFiller : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        jamAmount--;
+        jamAmount -= 0.34f;
     }
 
     //my event
