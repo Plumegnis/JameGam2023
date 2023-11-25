@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine;
 using System.Runtime.ExceptionServices;
 using System;
+using UnityEngine.EventSystems;
 
 public class StorageFiller : MonoBehaviour
 {
@@ -15,61 +16,51 @@ public class StorageFiller : MonoBehaviour
 
     public float randomeventchance;
 
+    private bool isPaused = false;
+
     public int EventTriggerNumber = 0;
-    public bool isfilling = false;
+    public bool isfilling = true;
     public float currentFillAmount;
-    private static StorageFiller _instance;
-    public GameObject DownloadProgramIcon;
-    public GameObject windows;
+    public Image jarOfJam;
 
 
-    // Public property to access the singleton instance
-    public static StorageFiller Instance
+    private void Start()
     {
-        get
-        {
-            // If the instance does not exist, find or create it
-            if (_instance == null)
-            {
-                _instance = FindObjectOfType<StorageFiller>();
-
-                // If no instance is found in the scene, create a new GameObject with the singleton script
-                if (_instance == null)
-                {
-                    GameObject singletonObject = new GameObject("MySingleton");
-                    _instance = singletonObject.AddComponent<StorageFiller>();
-                }
-            }
-
-            return _instance;
-        }
+        isPaused = false;
     }
 
-    // Optional: Add your singleton-specific code here
-
-    private void Awake()
+    private void TogglePause()
     {
-        // Ensure there's only one instance of the singleton
-        if (_instance != null && _instance != this)
+        isPaused = !isPaused;
+
+        if (isPaused)
         {
-            Destroy(this.gameObject);
+            Time.timeScale = 0.0f; // Pause the game
         }
         else
         {
-            _instance = this;
-
+            Time.timeScale = 1.0f; // Resume normal time
         }
     }
+
+
+
+
+    // Optional: Add your singleton-specific code here
+
 
     void Update()
     {
-        if (isfilling == true)
+        currentFillAmount -= Time.deltaTime / fillSpeed;
+        currentFillAmount = Mathf.Clamp01(currentFillAmount);
+        fillImage.fillAmount = currentFillAmount;
+
+        if (currentFillAmount == 0)
         {
-            currentFillAmount += Time.deltaTime / fillSpeed;
-            currentFillAmount = Mathf.Clamp01(currentFillAmount);
-            fillImage.fillAmount = currentFillAmount;
+            BSOD.SetActive(true);
+            TogglePause();
         }
 
+        
     }
-
 }
