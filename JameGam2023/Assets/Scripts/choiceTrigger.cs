@@ -6,7 +6,7 @@ public class choiceTrigger : MonoBehaviour
 {
     public Collider2D Collider;
     public GameObject Dialogue;
-    void OnCollisionEnter2D(Collision2D col)
+    void OnTriggernEnter2D(Collider col)
     {
         if (col.gameObject.tag == "Player")
         {
