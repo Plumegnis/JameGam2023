@@ -8,7 +8,15 @@ public class GivetoLife : MonoBehaviour
     public bool hideButtonWithCard = false; // Decyduje, czy przycisk ma zniknąć razem z kartą
     public bool hideAllButtons = false; // Decyduje, czy wszystkie przyciski mają zniknąć jednocześnie
 
-    public void OnGivetoLifeButtonPressed()
+    private int savedCardsCount = 0;
+
+    void Start()
+    {
+        // Pobierz wcześniejszą ilość ocalonych kart z PlayerPrefs
+        savedCardsCount = PlayerPrefs.GetInt("SavedCards", 0);
+    }
+
+    public void OnGiveButtonPressed()
     {
         // Sprawdź, czy obiekt karty istnieje
         if (cardObject != null)
@@ -39,6 +47,15 @@ public class GivetoLife : MonoBehaviour
         {
             // Zniknij obiekt karty
             cardObject.SetActive(false);
+
+            // Zwiększ liczbę ocalonych kart
+            savedCardsCount++;
+
+            // Zapisz nową ilość ocalonych kart w PlayerPrefs
+            PlayerPrefs.SetInt("SavedCards", savedCardsCount);
+
+            // Wymuszenie zapisu danych do PlayerPrefs
+            PlayerPrefs.Save();
         }
 
         // Znajdź wszystkie przyciski w scenie
