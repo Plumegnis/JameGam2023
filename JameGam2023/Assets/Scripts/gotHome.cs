@@ -16,7 +16,7 @@ public class gotHome : MonoBehaviour
 
     IEnumerator WinningScreen()
     {
-        yield return new WaitForSecondsRealtime(0.5f);
+        yield return new WaitForSecondsRealtime(3f);
 
         WIN.SetActive(true);
 

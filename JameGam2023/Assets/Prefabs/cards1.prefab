@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 4910018847999173696}
   - component: {fileID: 4910018847999173699}
   m_Layer: 5
-  m_Name: Save
+  m_Name: Preserve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -526,8 +526,9 @@ GameObject:
   - component: {fileID: 4910018848192572009}
   - component: {fileID: 4910018848192572008}
   - component: {fileID: 4910018848192572011}
+  - component: {fileID: 3534887701636991387}
   m_Layer: 5
-  m_Name: Don't Save
+  m_Name: Save
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -635,7 +636,36 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4910018848192572008}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3534887701636991387}
+        m_TargetAssemblyTypeName: GivetoLife, Assembly-CSharp
+        m_MethodName: OnGiveButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3534887701636991387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4910018848192572021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d3ff839462f4cf2b126b0e2839891e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardObject: {fileID: 4910018847371890043}
+  hideButtonWithCard: 1
+  hideAllButtons: 1
+  preserveButton: {fileID: 4910018847999173709}
+  saveButton: {fileID: 4910018848192572021}
 --- !u!1 &4910018848404914387
 GameObject:
   m_ObjectHideFlags: 0

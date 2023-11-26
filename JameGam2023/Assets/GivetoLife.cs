@@ -9,6 +9,8 @@ public class GivetoLife : MonoBehaviour
     public bool hideAllButtons = false; // Decyduje, czy wszystkie przyciski mają zniknąć jednocześnie
 
     private int savedCardsCount = 0;
+    public GameObject preserveButton;
+    public GameObject saveButton;
 
     void Start()
     {
@@ -64,11 +66,9 @@ public class GivetoLife : MonoBehaviour
         // Sprawdź, czy wszystkie przyciski mają zniknąć
         if (hideAllButtons)
         {
-            // Zniknij wszystkie przyciski
-            foreach (Button button in allButtons)
-            {
-                button.gameObject.SetActive(false);
-            }
+            preserveButton.SetActive(false);
+            saveButton.SetActive(false);
+
         }
     }
 }
