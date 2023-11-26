@@ -25,6 +25,13 @@ public class Savebutton : MonoBehaviour
         }
     }
 
+    public bool IsSaveButtonPressed()
+    {
+        // Dodaj dowolną logikę, która sprawdza, czy przycisk "Save" został naciśnięty
+        // Na przykład, możesz użyć Input.GetKey lub innej metody, którą preferujesz
+        return Input.GetKey(KeyCode.S);
+    }
+
     // Korutyna opóźniająca znikanie przycisku i karty
     IEnumerator HideButtonAndCardWithDelay()
     {
