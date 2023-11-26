@@ -7,6 +7,8 @@ public class boatMovement : MonoBehaviour
 
     public GameObject lifeTalking;
     public GameObject intro;
+    public string panelTag = "Panel";
+
 
     // Start is called before the first frame update
     void Start()
@@ -18,14 +20,23 @@ public class boatMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            lifeTalking.SetActive(true);
-        }
+        GameObject[] panels = GameObject.FindGameObjectsWithTag(panelTag);
+        // Check if a GameObject with the specified tag is enabled
+        GameObject panel = GameObject.FindWithTag(panelTag);
+        // Check if at least one panel is active
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (panels.Length > 0)
         {
-            lifeTalking.SetActive(true);
+
+                if (Input.GetKeyDown(KeyCode.A))
+                {
+                    lifeTalking.SetActive(true);
+                }
+
+                if (Input.GetKeyDown(KeyCode.LeftArrow))
+                {
+                    lifeTalking.SetActive(true);
+                }
         }
     }
 }
