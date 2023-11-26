@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D controller;
     public float runSpeed = 100f;
-    float horizontalMove = 60f;
+    float horizontalMove = 80f;
 
     public static PlayerMovement instance;
 
