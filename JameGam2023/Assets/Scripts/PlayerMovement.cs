@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D controller;
-    public float runSpeed = 40f;
+    public float runSpeed = 100f;
     float horizontalMove = 40f;
 
     public static PlayerMovement instance;
@@ -30,6 +30,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        runSpeed = StorageFiller.instance.currentFillAmount * runSpeed;
+        if (StorageFiller.instance.currentFillAmount <= 0.2)
+        {
+            runSpeed = 20;
+        }
         horizontalMove = Input.GetAxis("Horizontal") * runSpeed;
     }
     void FixedUpdate() {

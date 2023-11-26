@@ -785,7 +785,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You do. '
+  m_text: Feeling guilty?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -35683,7 +35683,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Why do you seem so angry at me? You know I don''t make the decisions. '
+  m_text: 'Why that sudden change? '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -38784,7 +38784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4910018847077890022, guid: d82f2a2fd7c6bf44d9e93953551e59a4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4910018847077890023, guid: d82f2a2fd7c6bf44d9e93953551e59a4, type: 3}
       propertyPath: m_RootOrder
@@ -39264,7 +39264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 9107583379711824693}
-  runSpeed: 40
+  runSpeed: 100
 --- !u!114 &9107583379711824693
 MonoBehaviour:
   m_ObjectHideFlags: 0
