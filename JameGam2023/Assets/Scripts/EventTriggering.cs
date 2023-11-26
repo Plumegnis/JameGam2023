@@ -64,12 +64,12 @@ public class EventTriggering : MonoBehaviour
     }
     private void Event4()
     {
-        Life3.SetActive(true);
+        Life4.SetActive(true);
         EventTriggerNumber++;
     }
     private void Event5()
     {
-        Life3.SetActive(true);
+        Life5.SetActive(true);
         EventTriggerNumber++;
     }
 }
