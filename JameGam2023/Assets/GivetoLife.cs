@@ -59,7 +59,7 @@ public class GivetoLife : MonoBehaviour
             cardObject.SetActive(false);
 
             // Zwiększ liczbę ocalonych kart
-            savedCardsCount++;
+            EventTriggering.instance.EventTriggerNumber++;
 
             // Zapisz nową ilość ocalonych kart w PlayerPrefs
             PlayerPrefs.SetInt("SavedCards", savedCardsCount);

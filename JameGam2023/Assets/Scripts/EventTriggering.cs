@@ -20,7 +20,7 @@ public class EventTriggering : MonoBehaviour
     {
         instance = this;
     }
-    void OnCollisionEnter2D(Collision2D col)
+    void Update()
     {
 
         switch (EventTriggerNumber)
@@ -30,7 +30,7 @@ public class EventTriggering : MonoBehaviour
             case 1:
                 Event1();
                 break;
-            case 2:
+            case 3:
                 Event2();
                 break;
         }
@@ -38,12 +38,13 @@ public class EventTriggering : MonoBehaviour
 
     private void Event1()
     {
-    
+        Life1.SetActive(true);
+        EventTriggerNumber++;
     }
 
     private void Event2()
     {
-
+        Life2.SetActive(true);
     }
 }
 
