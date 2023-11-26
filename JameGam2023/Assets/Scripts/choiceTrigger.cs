@@ -19,7 +19,6 @@ public class choiceTrigger : MonoBehaviour
         {
             Dialogue.SetActive(true);
             PlayerMovement.instance.runSpeed = 0;
-
             }
 
         }
