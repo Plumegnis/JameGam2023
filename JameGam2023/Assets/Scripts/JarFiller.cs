@@ -15,7 +15,7 @@ public class JarFiller : MonoBehaviour, IPointerClickHandler
     public Button Preserve;
     public Button Leave;
 
-    public float jamAmount = 1;
+    public float jamAmount = 3;
 
     public TextMeshProUGUI counter;
 
@@ -44,7 +44,7 @@ public class JarFiller : MonoBehaviour, IPointerClickHandler
     // Update is called once per frame
     void Update()
     {
-        Jam.fillAmount = jamAmount;
+        Jam.fillAmount = jamAmount * 0.35f;
         counter.text = jamAmount.ToString();
 
         if (jamAmount <= 0)
@@ -55,7 +55,7 @@ public class JarFiller : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        jamAmount -= 0.34f;
+        jamAmount -= 1f;
     }
 
     //my event
