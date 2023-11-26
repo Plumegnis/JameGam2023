@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -16,18 +17,40 @@ public class JarFiller : MonoBehaviour, IPointerClickHandler
 
     public float jamAmount = 1;
 
-    public Text counter;
+    public TextMeshProUGUI counter;
+
+    public static JarFiller instance;
+
+    public Image hunger;
+
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-
+  
     }
 
     // Update is called once per frame
     void Update()
     {
         Jam.fillAmount = jamAmount;
+        counter.text = jamAmount.ToString();
+
+        if (jamAmount <= 0)
+        {
+            jamAmount = 0;
+        }
     }
 
     public void OnPointerClick(PointerEventData eventData)
