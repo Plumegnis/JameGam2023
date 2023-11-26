@@ -365,7 +365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3851142, g: 0.3974435, b: 0.6132076, a: 0.36078432}
+  m_Color: {r: 0.55200124, g: 0.5629746, b: 0.764151, a: 0.36078432}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -544,7 +544,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3851142, g: 0.3974435, b: 0.6132076, a: 0.36078432}
+  m_Color: {r: 0.55200124, g: 0.5629746, b: 0.764151, a: 0.36078432}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
