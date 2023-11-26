@@ -10185,12 +10185,10 @@ MonoBehaviour:
   fillImage: {fileID: 750670192}
   fillSpeed: 60
   BSOD: {fileID: 74168057}
-  randomeventchance: 0
   EventTriggerNumber: 0
   isfilling: 0
   currentFillAmount: 0
-  DownloadProgramIcon: {fileID: 0}
-  windows: {fileID: 0}
+  jarOfJam: {fileID: 0}
 --- !u!1 &767082188
 GameObject:
   m_ObjectHideFlags: 0
@@ -16662,13 +16660,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 00d3ff839462f4cf2b126b0e2839891e, type: 3}
-        m_TargetAssemblyTypeName: Savebutton, Assembly-CSharp
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -16721,7 +16719,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1275049140}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d3ff839462f4cf2b126b0e2839891e, type: 3}
+  m_Script: {fileID: 11500000, guid: 2684fd93a1abb40c58fc30a1562f4bf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cardObject: {fileID: 635838411}

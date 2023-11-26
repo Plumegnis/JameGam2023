@@ -7,7 +7,6 @@ public class Savebutton : MonoBehaviour
     public GameObject cardObject; // Przypisz obiekt karty do tego pola w inspektorze Unity
     public bool hideButtonWithCard = false; // Decyduje, czy przycisk ma zniknąć razem z kartą
     public bool hideAllButtons = false; // Decyduje, czy wszystkie przyciski mają zniknąć jednocześnie
-    public bool giveToLifeButtonPressed = false; // Informuje, czy przycisk "Give to Life" został naciśnięty
 
     private int savedCardsCount = 0;
 
@@ -35,9 +34,8 @@ public class Savebutton : MonoBehaviour
         // Sprawdź, czy obiekt przycisku istnieje (może zostać zniszczony podczas oczekiwania)
         if (gameObject != null)
         {
-            // Sprawdź, czy przycisk ma zniknąć razem z kartą, wszystkie przyciski mają zniknąć, 
-            // lub został naciśnięty przycisk "Give to Life"
-            if (hideButtonWithCard || hideAllButtons || giveToLifeButtonPressed)
+            // Sprawdź, czy przycisk ma zniknąć razem z kartą lub wszystkie przyciski mają zniknąć
+            if (hideButtonWithCard || hideAllButtons)
             {
                 // Zniknij przycisk
                 gameObject.SetActive(false);
@@ -60,12 +58,12 @@ public class Savebutton : MonoBehaviour
             PlayerPrefs.Save();
         }
 
-        // Sprawdź, czy wszystkie przyciski mają zniknąć
-        if (hideAllButtons || giveToLifeButtonPressed)
-        {
-            // Znajdź wszystkie przyciski w scenie
-            Button[] allButtons = FindObjectsOfType<Button>();
+        // Znajdź wszystkie przyciski w scenie
+        Button[] allButtons = FindObjectsOfType<Button>();
 
+        // Sprawdź, czy wszystkie przyciski mają zniknąć
+        if (hideAllButtons)
+        {
             // Zniknij wszystkie przyciski
             foreach (Button button in allButtons)
             {
