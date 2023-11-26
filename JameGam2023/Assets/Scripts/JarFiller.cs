@@ -49,8 +49,11 @@ public class JarFiller : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        jamAmount -= 1f;
-        StorageFiller.instance.currentFillAmount = +40f;
+        if (jamAmount > 0)
+        {
+            jamAmount -= 1f;
+            StorageFiller.instance.currentFillAmount = +30f;
+        }
     }
 
     //my event
