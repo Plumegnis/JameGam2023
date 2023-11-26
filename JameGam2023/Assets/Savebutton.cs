@@ -8,6 +8,9 @@ public class Savebutton : MonoBehaviour
     public bool hideButtonWithCard = false; // Decyduje, czy przycisk ma zniknąć razem z kartą
     public bool hideAllButtons = false; // Decyduje, czy wszystkie przyciski mają zniknąć jednocześnie
 
+    public GameObject preserveButton;
+    public GameObject saveButton;
+
     public int savedCardsCount = 0;
 
     void Start()
@@ -71,11 +74,9 @@ public class Savebutton : MonoBehaviour
         // Sprawdź, czy wszystkie przyciski mają zniknąć
         if (hideAllButtons)
         {
-            // Zniknij wszystkie przyciski
-            foreach (Button button in allButtons)
-            {
-                button.gameObject.SetActive(false);
-            }
+            preserveButton.SetActive(false);
+            saveButton.SetActive(false);
+
         }
 
         JarFiller.instance.jamAmount++;

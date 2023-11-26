@@ -511,7 +511,9 @@ MonoBehaviour:
   cardObject: {fileID: 4910018847371890043}
   hideButtonWithCard: 1
   hideAllButtons: 1
-  giveToLifeButtonPressed: 0
+  preserveButton: {fileID: 4910018847999173709}
+  saveButton: {fileID: 4910018848192572021}
+  savedCardsCount: 0
 --- !u!1 &4910018848192572021
 GameObject:
   m_ObjectHideFlags: 0

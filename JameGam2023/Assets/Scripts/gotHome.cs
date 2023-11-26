@@ -8,7 +8,7 @@ public class gotHome : MonoBehaviour
     public GameObject WIN;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Finish")
         {
             StartCoroutine(WinningScreen());
         }
@@ -16,7 +16,7 @@ public class gotHome : MonoBehaviour
 
     IEnumerator WinningScreen()
     {
-        yield return new WaitForSecondsRealtime(3);
+        yield return new WaitForSeconds(3);
 
         WIN.SetActive(true);
 
