@@ -513,6 +513,8 @@ MonoBehaviour:
   hideAllButtons: 1
   preserveButton: {fileID: 4910018847999173709}
   saveButton: {fileID: 4910018848192572021}
+  preserve: {fileID: 4910018847999173696}
+  save: {fileID: 4910018848192572011}
   savedCardsCount: 0
 --- !u!1 &4910018848192572021
 GameObject:
