@@ -6,11 +6,13 @@ public class boatMovement : MonoBehaviour
 {
 
     public GameObject lifeTalking;
+    public GameObject intro;
 
     // Start is called before the first frame update
     void Start()
     {
         lifeTalking.SetActive(false);
+        intro.SetActive(true);
     }
 
     // Update is called once per frame

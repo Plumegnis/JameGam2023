@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8674769960549058877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/music
+  m_EditorClassIdentifier: 
+  Path: event:/music/music
+  Guid:
+    Data1: 920501203
+    Data2: 1113748239
+    Data3: -1184009026
+    Data4: 1285526112
+  Banks:
+  - {fileID: -3373027673644114103}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 115466
 --- !u!114 &-3373027673644114103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,7 +42,7 @@ MonoBehaviour:
   Path: Sound/JameGam2023/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638364428324458472
+  lastModified: 638366317459002675
   FileSizes: []
   Exists: 1
 --- !u!114 &-2123947254896763515
@@ -33,10 +60,10 @@ MonoBehaviour:
   Path: Sound/JameGam2023/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638364428324468494
+  lastModified: 638366317459012651
   FileSizes:
   - Name: 
-    Value: 712
+    Value: 760
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -53,11 +80,12 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: -2123947254896763515}
   - {fileID: -3373027673644114103}
-  EditorEvents: []
+  EditorEvents:
+  - {fileID: -8674769960549058877}
   EditorParameters: []
   MasterBanks:
   - {fileID: -3373027673644114103}
   StringsBanks:
   - {fileID: -2123947254896763515}
-  cacheTime: 638364428324468494
+  cacheTime: 638366317459012651
   cacheVersion: 131609

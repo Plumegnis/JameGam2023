@@ -52,7 +52,7 @@ public class JarFiller : MonoBehaviour, IPointerClickHandler
         if (jamAmount > 0)
         {
             jamAmount -= 1f;
-            StorageFiller.instance.currentFillAmount += 0.3f;
+            StorageFiller.instance.currentFillAmount += 0.35f;
         }
     }
 
