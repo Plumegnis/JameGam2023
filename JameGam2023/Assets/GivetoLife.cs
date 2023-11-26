@@ -6,11 +6,14 @@ public class GivetoLife : MonoBehaviour
 {
     public GameObject cardObject; // Przypisz obiekt karty do tego pola w inspektorze Unity
     public bool hideButtonWithCard = false; // Decyduje, czy przycisk ma zniknąć razem z kartą
-    public bool hideAllButtons = false; // Decyduje, czy wszystkie przyciski mają zniknąć jednocześnie
+    public bool hideAllButtons = true; // Decyduje, czy wszystkie przyciski mają zniknąć jednocześnie
 
     private int savedCardsCount = 0;
     public GameObject preserveButton;
     public GameObject saveButton;
+
+    public Button preserve;
+    public Button save;
 
     void Start()
     {
@@ -24,7 +27,12 @@ public class GivetoLife : MonoBehaviour
         if (cardObject != null)
         {
             StartCoroutine(HideButtonAndCardWithDelay());
+
         }
+
+        preserve.interactable = false;
+        save.interactable = false;
+
     }
 
     // Korutyna opóźniająca znikanie przycisku i karty

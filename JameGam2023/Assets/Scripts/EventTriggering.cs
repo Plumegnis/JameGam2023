@@ -4,26 +4,33 @@ using UnityEngine;
 
 public class EventTriggering : MonoBehaviour
 {
+    public static EventTriggering instance;
     public int EventTriggerNumber = 0;
     public Collider2D Collider;
-    public GameObject Dialogue;
+    public GameObject Life1;
+    public GameObject Life2;
+    public GameObject Life3;
+    public GameObject Life4;
+    public GameObject Life5;
+    public GameObject Life6;
+
+
+
+    private void Awake()
+    {
+        instance = this;
+    }
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "movable")
-        {
-            EventTriggerNumber++;
-            col.gameObject.SetActive(false);
-        }
-
 
         switch (EventTriggerNumber)
         {
             case 0:
                 break;
-            case 3:
+            case 1:
                 Event1();
                 break;
-            case 10:
+            case 2:
                 Event2();
                 break;
         }
