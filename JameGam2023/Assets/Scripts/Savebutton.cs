@@ -11,6 +11,9 @@ public class Savebutton : MonoBehaviour
     public GameObject preserveButton;
     public GameObject saveButton;
 
+    public Button preserve;
+    public Button save;
+
     public int savedCardsCount = 0;
 
     void Start()
@@ -26,6 +29,8 @@ public class Savebutton : MonoBehaviour
         {
             StartCoroutine(HideButtonAndCardWithDelay());
         }
+        preserve.interactable = false;
+        save.interactable = false;
     }
 
     public bool IsSaveButtonPressed()

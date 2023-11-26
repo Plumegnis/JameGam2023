@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class EventTriggering : MonoBehaviour
@@ -33,6 +34,15 @@ public class EventTriggering : MonoBehaviour
             case 3:
                 Event2();
                 break;
+            case 5:
+                Event3();
+                break;
+            case 7:
+                Event4();
+                break;
+            case 9:
+                Event5();
+                break;
         }
     }
 
@@ -45,6 +55,22 @@ public class EventTriggering : MonoBehaviour
     private void Event2()
     {
         Life2.SetActive(true);
+        EventTriggerNumber++;
+    }
+    private void Event3()
+    {
+        Life3.SetActive(true);
+        EventTriggerNumber++;
+    }
+    private void Event4()
+    {
+        Life3.SetActive(true);
+        EventTriggerNumber++;
+    }
+    private void Event5()
+    {
+        Life3.SetActive(true);
+        EventTriggerNumber++;
     }
 }
 
