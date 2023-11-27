@@ -1129,10 +1129,10 @@ MonoBehaviour:
   timeScale: 0
   _text: 'me, the lightning of storms - quieter than a tomb,
 
-    
 
-    me, the
-    void of rainbows, I would cry over myself.'
+
+    me, the void
+    of rainbows, I would cry over myself.'
   useDynamicScaling: 1
   referenceFontSize: 10
   isResettingTimeOnNewText: 1
@@ -1366,10 +1366,11 @@ MonoBehaviour:
     Life.
 
 
-    Eat to manage Hunger.
+    Eat [click] from the Jar to manage Hunger.
 
 
-    Go home with 1 full Jar.'
+    Go home with 1 full
+    Jar.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
