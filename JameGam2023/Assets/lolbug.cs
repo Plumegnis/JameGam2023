@@ -11,16 +11,10 @@ public class lolbug : MonoBehaviour
     }
 
     // Update is called once per frame
-    void OnTriggerStay2D(Collider2D collider)
+    public void Running()
     {
-        if (collider.gameObject.tag == "Player")
-        {
-
-
-            if (PlayerMovement.instance.runSpeed < 20)
-            {
-                PlayerMovement.instance.runSpeed = 30;
-            }
-        }
+       PlayerMovement.instance.runSpeed = 30;
+   
+           
     }
 }
