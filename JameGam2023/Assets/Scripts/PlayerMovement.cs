@@ -35,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
         {
             runSpeed = 20;
         }
+
         horizontalMove = Input.GetAxis("Horizontal") * runSpeed;
     }
     void FixedUpdate() {
